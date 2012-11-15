@@ -5,7 +5,6 @@ class Pcl < Formula
   homepage 'http://www.pointclouds.org'
   md5 'd96479ab65245c64d91a6fe1d803275a'
   version '1.5.1'
-#  head 'svn+ssh://svn@svn.pointclouds.org/pcl/trunk'
   head 'http://svn.pointclouds.org/pcl/trunk', :using => :svn
 
   depends_on 'cmake'
