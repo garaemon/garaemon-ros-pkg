@@ -1,0 +1,12 @@
+<package>
+  <description brief="pcl">
+
+  pcl library dummy package
+
+  </description>
+  <author>Ryohei Ueda</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="pcl"/>
+
+</package>

@@ -1,0 +1,13 @@
+<package>
+  <description brief="protobuf">
+
+protobuf library dummy package
+
+  </description>
+  <author>Ryohei Ueda</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="protobuf"/>
+
+</package>
+
