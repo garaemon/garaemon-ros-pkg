@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/garaemon/ros/groovy/garaemon-ros-pkg/rwt_utils/rwt_plot/build/devel/setup.sh

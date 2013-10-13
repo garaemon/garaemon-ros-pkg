@@ -1,0 +1,15 @@
+<package>
+  <description brief="rwt_plot">
+
+     rwt_plot
+
+  </description>
+  <author>Ryohei Ueda</author>
+  <license>BSD</license>
+  <depend package="roswww"></depend>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rwt_plot</url>
+
+</package>
+
+
