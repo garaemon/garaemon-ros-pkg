@@ -7,6 +7,9 @@
   <author>Ryohei Ueda</author>
   <license>BSD</license>
   <depend package="roswww"></depend>
+<depend package="rosbridge"></depend>
+<depend package="rospy"></depend>
+<depend package="std_msgs"></depend>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/rwt_plot</url>
 

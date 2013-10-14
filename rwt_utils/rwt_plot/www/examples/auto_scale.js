@@ -1,4 +1,4 @@
-//$(function() {
+$(function() {
     var plot = new ROSLIB.RWTPlot({
         max_data: 100
     });
@@ -21,5 +21,5 @@
         }
     }
     plot.draw();
-//});
+});
 
