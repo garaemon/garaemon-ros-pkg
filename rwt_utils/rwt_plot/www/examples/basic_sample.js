@@ -7,7 +7,7 @@ $(function() {
             max: 10000
         }
     });
-    for (var i = 0; i < 100; i++)
+    for (var i = 0; i < 101; i++)
         plot.addData(i * i);    // quadratic
     plot.draw();
 });

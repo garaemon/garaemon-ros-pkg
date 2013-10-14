@@ -37,6 +37,7 @@ ROSLIB.RWTPlot.prototype.addData = function(data) {
     var plot_data = [];
     for (var i = 0; i < this.data.length; i++) {
         plot_data.push([i, this.data[i]]);
+        console.log(this.data[i]);
     }
     if (this.plot) {
         this.plot.setData([plot_data]);
