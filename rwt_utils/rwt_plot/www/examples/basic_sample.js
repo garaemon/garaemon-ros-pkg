@@ -4,10 +4,10 @@ $(function() {
     });
     plot.initializePlot("#plot-area", {
         yaxis: {
-            max: 100
+            max: 10000
         }
     });
     for (var i = 0; i < 100; i++)
-        plot.addData(i);
+        plot.addData(i * i);    // quadratic
     plot.draw();
 });
