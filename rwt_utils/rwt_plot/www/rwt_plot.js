@@ -33,14 +33,27 @@ ROSLIB.RWTPlot.prototype.addData = function(data) {
     if (this.data.length > this.max_data) {
         this.data = this.data.slice(1);
     }
+
+    // check the dimension
+    var data_dimension = _.isArray(data) ? data.length : 1;
+    if (data_dimension == 1)
+        data = [data];          // force to encapsulate into array
     this.data.push(data);
+    
     var plot_data = [];
-    for (var i = 0; i < this.data.length; i++) {
-        plot_data.push([i, this.data[i]]);
-        console.log(this.data[i]);
+    // plot_data := [[[x1, y1], [x1, y2], [x1, y3], ...], [[x1, z1], [x1, z2], ...], ...]
+    for (var i = 0; i < this.data.length; i++) { // x_i := i
+        for (var j = 0; j < this.data[i].length; j++) {
+            var new_data = [i, this.data[i][j]]; // [x1, y1] or [x1, z1]
+            if (!(plot_data.length > j)) {
+                // adding new empty array to plot_data
+                plot_data.push([]);
+            }
+            plot_data[j].push(new_data);
+        }
     }
     if (this.plot) {
-        this.plot.setData([plot_data]);
+        this.plot.setData(plot_data);
     }
 };
 
